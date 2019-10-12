@@ -4,7 +4,7 @@ const app = express();
 
 app
   .get('/', (req, res) => res.send('API Runnning'))
-  .get('/welcome', (req, res) => res.send('welcomw to the site'));
+  .get('/welcome', (req, res) => res.send('welcome to the site'));
 
 const PORT = process.env.PORT || 5000;
 

@@ -2,7 +2,9 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => res.send('API Runnning'));
+app
+  .get('/', (req, res) => res.send('API Runnning'))
+  .get('/welcome', (req, res) => res.send('welcomw to the site'));
 
 const PORT = process.env.PORT || 5000;
 
